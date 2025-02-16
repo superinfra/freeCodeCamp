@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T-Shirt Co. - Order a T-Shirt</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <h1 id="title">T-Shirt order form</h1>
+    <p id="description">Buy a brand new graphic tee from T-Shirt Co. for $8.99!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" placeholder="John Doe" required></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder="realjohndoe@example.com" required></label>
+        <label id="number-label" for="number">Quantity <input id="number" type="number" min="1" max="5" placeholder="1" required></label>
+        <label for="dropdown">Size
+          <select id="dropdown">
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Select a color</legend>
+        <label for="white"><input id="white" type="radio" name="colors" value="white" checked> White</label>
+        <label for="black"><input id="black" type="radio" name="colors" value="black"> Black</label>
+        <label for="red"><input id="red" type="radio" name="colors" value="red"> Red</label>
+        <label for="blue"><input id="blue" type="radio" name="colors" value="blue"> Blue</label>
+      </fieldset>
+      <fieldset>
+        <legend>Add-ons</legend>
+        <label for="same-day"><input id="same-day" type="checkbox" value="same-day"> Same-day delivery (+$2.00)</label>
+        <label for="sticker"><input id="sticker" type="checkbox" value="sticker"> T-Shirt Co. bumper sticker (+$1.00)</label>
+        <label for="gift"><input id="gift" type="checkbox" value="gift"> Gift wrapped (+$0.50)</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Special requests <textarea id="comments"></textarea></label>
+        <input id="submit" type="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
